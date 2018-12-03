@@ -9,3 +9,14 @@ C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.
 C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.exe
 C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.pdb
 C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.Register.resources
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\MyBugTracker.exe.config
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\MyBugTracker.exe
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\MyBugTracker.pdb
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.csprojAssemblyReference.cache
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.Form1.resources
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.Properties.Resources.resources
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.Register.resources
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.csproj.GenerateResource.cache
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.csproj.CoreCompileInputs.cache
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.exe
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.pdb

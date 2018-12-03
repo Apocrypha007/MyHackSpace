@@ -36,12 +36,12 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_confirmPwd = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.registerButton2 = new System.Windows.Forms.Button();
+            this.combo_utype = new System.Windows.Forms.ComboBox();
+            this.txt_pwd = new System.Windows.Forms.TextBox();
+            this.txt_user = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -119,12 +119,12 @@
             // 
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txt_confirmPwd);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.registerButton2);
+            this.panel1.Controls.Add(this.combo_utype);
+            this.panel1.Controls.Add(this.txt_pwd);
+            this.panel1.Controls.Add(this.txt_user);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -133,14 +133,14 @@
             this.panel1.Size = new System.Drawing.Size(1249, 623);
             this.panel1.TabIndex = 5;
             // 
-            // textBox3
+            // txt_confirmPwd
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(571, 215);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(561, 48);
-            this.textBox3.TabIndex = 13;
+            this.txt_confirmPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_confirmPwd.Location = new System.Drawing.Point(571, 215);
+            this.txt_confirmPwd.Name = "txt_confirmPwd";
+            this.txt_confirmPwd.PasswordChar = '*';
+            this.txt_confirmPwd.Size = new System.Drawing.Size(561, 48);
+            this.txt_confirmPwd.TabIndex = 13;
             // 
             // label6
             // 
@@ -153,49 +153,50 @@
             this.label6.Text = "Confirm Password";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // button3
+            // registerButton2
             // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(376, 423);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(493, 70);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Register";
-            this.button3.UseVisualStyleBackColor = false;
+            this.registerButton2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.registerButton2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.registerButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.registerButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.registerButton2.Location = new System.Drawing.Point(376, 423);
+            this.registerButton2.Name = "registerButton2";
+            this.registerButton2.Size = new System.Drawing.Size(493, 70);
+            this.registerButton2.TabIndex = 11;
+            this.registerButton2.Text = "Register";
+            this.registerButton2.UseVisualStyleBackColor = false;
+            this.registerButton2.Click += new System.EventHandler(this.registerButton2_Click);
             // 
-            // comboBox1
+            // combo_utype
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.combo_utype.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_utype.FormattingEnabled = true;
+            this.combo_utype.Items.AddRange(new object[] {
             "Admin",
             "Programmer",
             "User"});
-            this.comboBox1.Location = new System.Drawing.Point(571, 302);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(561, 48);
-            this.comboBox1.TabIndex = 8;
+            this.combo_utype.Location = new System.Drawing.Point(571, 302);
+            this.combo_utype.Name = "combo_utype";
+            this.combo_utype.Size = new System.Drawing.Size(561, 48);
+            this.combo_utype.TabIndex = 8;
             // 
-            // textBox2
+            // txt_pwd
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(571, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(561, 48);
-            this.textBox2.TabIndex = 7;
+            this.txt_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pwd.Location = new System.Drawing.Point(571, 118);
+            this.txt_pwd.Name = "txt_pwd";
+            this.txt_pwd.PasswordChar = '*';
+            this.txt_pwd.Size = new System.Drawing.Size(561, 48);
+            this.txt_pwd.TabIndex = 7;
             // 
-            // textBox1
+            // txt_user
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(571, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(561, 48);
-            this.textBox1.TabIndex = 6;
+            this.txt_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_user.Location = new System.Drawing.Point(571, 39);
+            this.txt_user.Name = "txt_user";
+            this.txt_user.Size = new System.Drawing.Size(561, 48);
+            this.txt_user.TabIndex = 6;
             // 
             // label5
             // 
@@ -271,15 +272,15 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button registerButton2;
+        private System.Windows.Forms.ComboBox combo_utype;
+        private System.Windows.Forms.TextBox txt_pwd;
+        private System.Windows.Forms.TextBox txt_user;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_confirmPwd;
     }
 }
