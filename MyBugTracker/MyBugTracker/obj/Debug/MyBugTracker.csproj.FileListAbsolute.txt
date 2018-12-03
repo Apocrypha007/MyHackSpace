@@ -1,0 +1,11 @@
+C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\bin\Debug\MyBugTracker.exe.config
+C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\bin\Debug\MyBugTracker.exe
+C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\bin\Debug\MyBugTracker.pdb
+C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.csprojAssemblyReference.cache
+C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.Form1.resources
+C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.Properties.Resources.resources
+C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.csproj.GenerateResource.cache
+C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.csproj.CoreCompileInputs.cache
+C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.exe
+C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.pdb
+C:\Users\Alex Grg\source\repos\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.Register.resources
