@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,10 +33,10 @@ namespace MyBugTracker
             if (Pwd.Equals(confirm_pwd))
             {
                 //Database connection 
-                SqlConnection conn = new SqlConnection("server = localhost; user id = root; database = bugplace");
+                MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugbase");
                 //Database connection
-                SqlCommand sda = new SqlCommand("INSERT INTO userdetails (username, password, confirmPassword, usertype) VALUES ('" + this.txt_user.Text + "','" + this.txt_pwd.Text + "','" + this.txt_confirmPwd.Text + "','" + this.combo_utype.Text + "')", conn);
-                SqlDataReader MyReader;
+                MySqlCommand sda = new MySqlCommand("INSERT INTO userdetails (username, password, confirmPassword, usertype) VALUES ('" + this.txt_user.Text + "','" + this.txt_pwd.Text + "','" + this.txt_confirmPwd.Text + "','" + this.combo_utype.Text + "')", conn);
+                MySqlDataReader MyReader;
                 conn.Open();
                 MyReader = sda.ExecuteReader();
                 MessageBox.Show("You are now registered. Please click ok");
