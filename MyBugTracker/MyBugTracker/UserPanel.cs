@@ -16,5 +16,15 @@ namespace MyBugTracker
         {
             InitializeComponent();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

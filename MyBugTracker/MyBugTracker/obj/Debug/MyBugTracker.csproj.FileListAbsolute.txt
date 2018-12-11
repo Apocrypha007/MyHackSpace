@@ -27,3 +27,5 @@ C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\MySql.Data.dll
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\Google.Protobuf.xml
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\MySql.Data.xml
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.csproj.CopyComplete
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.AdminPanel.resources
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.ProgrammerPanel.resources
