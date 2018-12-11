@@ -22,9 +22,23 @@ namespace MyBugTracker
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonAbout_Click(object sender, EventArgs e)
         {
+            About a = new About();
+            a.Show();
+        }
 
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            login.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ChangePassword change = new ChangePassword();
+            change.Show();
         }
     }
 }

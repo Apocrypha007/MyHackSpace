@@ -35,7 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonLogout = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -108,7 +108,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(5, 12);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pictureBox2.Name = "pictureBox2";
@@ -116,11 +115,12 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.RosyBrown;
-            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.buttonLogout);
             this.panel4.Controls.Add(this.pictureBox5);
             this.panel4.Location = new System.Drawing.Point(5, 343);
             this.panel4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
@@ -128,19 +128,20 @@
             this.panel4.Size = new System.Drawing.Size(661, 56);
             this.panel4.TabIndex = 5;
             // 
-            // button4
+            // buttonLogout
             // 
-            this.button4.BackColor = System.Drawing.Color.Crimson;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(329, 11);
-            this.button4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(101, 37);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "LOG OUT";
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonLogout.BackColor = System.Drawing.Color.Crimson;
+            this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonLogout.Location = new System.Drawing.Point(329, 11);
+            this.buttonLogout.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.buttonLogout.Name = "buttonLogout";
+            this.buttonLogout.Size = new System.Drawing.Size(101, 37);
+            this.buttonLogout.TabIndex = 11;
+            this.buttonLogout.Text = "LOG OUT";
+            this.buttonLogout.UseVisualStyleBackColor = false;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // pictureBox5
             // 
@@ -269,7 +270,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(669, 406);
+            this.ClientSize = new System.Drawing.Size(673, 407);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -304,7 +305,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button2;

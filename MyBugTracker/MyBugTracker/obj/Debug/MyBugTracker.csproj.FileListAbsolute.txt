@@ -13,7 +13,6 @@ C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\MyBugTracker.exe.config
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\MyBugTracker.exe
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\MyBugTracker.pdb
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.csprojAssemblyReference.cache
-C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.Form1.resources
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.Properties.Resources.resources
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.Register.resources
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.csproj.GenerateResource.cache
@@ -29,3 +28,5 @@ C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\MySql.Data.xml
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.csproj.CopyComplete
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.AdminPanel.resources
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.ProgrammerPanel.resources
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.ChangePassword.resources
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.LoginForm.resources

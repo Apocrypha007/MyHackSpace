@@ -41,7 +41,7 @@ namespace MyBugTracker
                 MyReader = sda.ExecuteReader();
                 MessageBox.Show("You are now registered. Please click ok");
                 //view login page
-                Form1 login = new Form1();
+                LoginForm login = new LoginForm();
                 login.Show();
                 this.Hide();
             }

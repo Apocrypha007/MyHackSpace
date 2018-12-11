@@ -12,11 +12,11 @@ using System.Windows.Forms;
 
 namespace MyBugTracker
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
         public static string uname, userpasswor, usertype;
         public static int uid;
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
         }

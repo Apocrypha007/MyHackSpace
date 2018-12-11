@@ -21,5 +21,17 @@ namespace MyBugTracker
         {
 
         }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            login.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

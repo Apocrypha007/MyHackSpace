@@ -38,7 +38,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonLogout = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -136,6 +136,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "CHANGE PASSWORD";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
@@ -151,7 +152,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.RosyBrown;
-            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.buttonLogout);
             this.panel4.Controls.Add(this.pictureBox5);
             this.panel4.Location = new System.Drawing.Point(336, 216);
             this.panel4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
@@ -159,19 +160,20 @@
             this.panel4.Size = new System.Drawing.Size(326, 147);
             this.panel4.TabIndex = 4;
             // 
-            // button4
+            // buttonLogout
             // 
-            this.button4.BackColor = System.Drawing.Color.Crimson;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(122, 55);
-            this.button4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(184, 37);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "LOG OUT";
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonLogout.BackColor = System.Drawing.Color.Crimson;
+            this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonLogout.Location = new System.Drawing.Point(122, 55);
+            this.buttonLogout.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.buttonLogout.Name = "buttonLogout";
+            this.buttonLogout.Size = new System.Drawing.Size(184, 37);
+            this.buttonLogout.TabIndex = 11;
+            this.buttonLogout.Text = "LOG OUT";
+            this.buttonLogout.UseVisualStyleBackColor = false;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // pictureBox5
             // 
@@ -227,7 +229,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(667, 370);
+            this.ClientSize = new System.Drawing.Size(671, 371);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -262,7 +264,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button3;
