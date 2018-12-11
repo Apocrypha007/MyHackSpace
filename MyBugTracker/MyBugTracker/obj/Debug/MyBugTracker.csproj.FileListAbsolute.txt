@@ -22,3 +22,8 @@ C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.exe
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.pdb
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.About.resources
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.UserPanel.resources
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\Google.Protobuf.dll
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\MySql.Data.dll
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\Google.Protobuf.xml
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\bin\Debug\MySql.Data.xml
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.csproj.CopyComplete

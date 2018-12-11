@@ -1,4 +1,6 @@
 ﻿using System;
+using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,8 @@ namespace MyBugTracker
 {
     public partial class Form1 : Form
     {
+        public static string uname, userpasswor, usertype;
+        public static int uid;
         public Form1()
         {
             InitializeComponent();
@@ -44,6 +48,89 @@ namespace MyBugTracker
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Username
+            string user = textBox_user.Text;
+            //Password
+            string pass = textBox_pwd.Text;
+            //Usertype
+            string uType = comboBox_utype.Text.Trim();
+
+            //Database connection
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;database=bugbase");
+
+            try
+            {
+                MySqlDataAdapter adapter = new MySqlDataAdapter("Select count(*) from userdetails where username='" + textBox_user.Text + "'and password='" + textBox_pwd.Text + "' and usertype='" + comboBox_utype.Text + "'", conn);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);//
+
+                if (user.Equals("") || pass.Equals("") || uType.Equals(""))
+                {
+
+                    MessageBox.Show("Fill all the forms", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                else if (dt.Rows[0][0].ToString() == "1")
+                {
+                    // loggedIn = user;
+                    // loggedIN_utype = uType;
+                    userpasswor = pass;
+                    uname = user;
+
+                    usertype = uType;
+                    switch (uType)
+                    {
+                        case "Admin":
+                            {
+
+                                // Admin Panel
+                                //  loggedIN_utype = uType;
+                                AdminPanel admin = new AdminPanel();
+                                MessageBox.Show("Login was succesful.");
+                                admin.Show();
+                                this.Hide();
+
+                                break;
+
+                            }
+                        //user
+                        case "User":
+                            {
+
+                                // User Dashboard is displayed
+                                UserPanel umenu = new UserPanel();
+                                MessageBox.Show("Login was succesful.");
+                                umenu.Show();
+                                this.Hide();
+                                break;
+                            }
+                        case "Programmer":
+                            {
+                                //Programmer Dashboard is displayed
+                                ProgrammerPanel pmenu = new ProgrammerPanel();
+                                MessageBox.Show("Login was succesful.");
+                                pmenu.Show();
+                                this.Hide();
+                                break;
+                            }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Username or password is incorrect", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                //Step :CLose Connection
+                conn.Close();
+            }
 
         }
 
