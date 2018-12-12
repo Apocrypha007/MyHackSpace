@@ -30,3 +30,4 @@ C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.AdminPanel.r
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.ProgrammerPanel.resources
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.ChangePassword.resources
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.LoginForm.resources
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.BugReport.resources

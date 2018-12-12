@@ -40,5 +40,11 @@ namespace MyBugTracker
             ChangePassword change = new ChangePassword();
             change.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BugReport b = new BugReport();
+            b.Show();
+        }
     }
 }
