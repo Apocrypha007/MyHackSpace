@@ -101,11 +101,11 @@
     <Compile Include="ChangePassword.Designer.cs">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="FixedBug.cs">
+    <Compile Include="ViewBugHistory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FixedBug.Designer.cs">
-      <DependentUpon>FixedBug.cs</DependentUpon>
+    <Compile Include="ViewBugHistory.Designer.cs">
+      <DependentUpon>ViewBugHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -165,8 +165,8 @@
     <EmbeddedResource Include="ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FixedBug.resx">
-      <DependentUpon>FixedBug.cs</DependentUpon>
+    <EmbeddedResource Include="ViewBugHistory.resx">
+      <DependentUpon>ViewBugHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

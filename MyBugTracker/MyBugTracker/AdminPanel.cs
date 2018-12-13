@@ -55,7 +55,7 @@ namespace MyBugTracker
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FixedBug fixbug = new FixedBug();
+            ViewBugHistory fixbug = new ViewBugHistory();
             fixbug.Show();
         }
     }

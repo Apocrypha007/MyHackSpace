@@ -34,5 +34,5 @@ C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.BugReport.re
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.AddBugSolution.resources
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.AssignBugTo.resources
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.AssignedBug.resources
-C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.FixedBug.resources
 C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.ManageUser.resources
+C:\git\MyHackSpace\MyBugTracker\MyBugTracker\obj\Debug\MyBugTracker.ViewBugHistory.resources

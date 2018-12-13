@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace MyBugTracker
 {
-    public partial class FixedBug : Form
+    public partial class ViewBugHistory : Form
     {
-        public FixedBug()
+        public ViewBugHistory()
         {
             InitializeComponent();
         }
@@ -38,7 +38,7 @@ namespace MyBugTracker
         private void FixedBug_Load(object sender, EventArgs e)
         {
             //Data Grid View
-            FixedBug vu = new FixedBug();
+            ViewBugHistory vu = new ViewBugHistory();
             DataTable dt = vu.Select_fixed();
             dgv_fixed.DataSource = dt;
         }
