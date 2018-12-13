@@ -151,5 +151,10 @@ namespace MyBugTracker
             reportDate.Text = dgv_sol.Rows[rowIndex].Cells[4].Value.ToString();
             cmbBox_status.Text = dgv_sol.Rows[rowIndex].Cells[5].Value.ToString();
         }
+
+        private void txtdes_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

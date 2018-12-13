@@ -227,6 +227,7 @@
             this.txtdes.ReadOnly = true;
             this.txtdes.Size = new System.Drawing.Size(309, 134);
             this.txtdes.TabIndex = 80;
+            this.txtdes.TextChanged += new System.EventHandler(this.txtdes_TextChanged);
             // 
             // reportDate
             // 
@@ -344,7 +345,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1065, 704);
+            this.ClientSize = new System.Drawing.Size(1064, 707);
             this.Controls.Add(this.dgv_sol);
             this.Controls.Add(this.button_cls);
             this.Controls.Add(this.btn_save);
@@ -373,9 +374,9 @@
             this.Controls.Add(this.lbl_bugID);
             this.Name = "AddBugSolution";
             this.Text = "AddBugSolution";
+            this.Load += new System.EventHandler(this.AddBugSolution_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.Load += new System.EventHandler(this.AddBugSolution_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_sol)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
