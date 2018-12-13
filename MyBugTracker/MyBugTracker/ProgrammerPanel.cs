@@ -40,5 +40,11 @@ namespace MyBugTracker
             AddBugSolution abs = new AddBugSolution();
             abs.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AssignedBug abug = new AssignedBug();
+            abug.Show();
+        }
     }
 }

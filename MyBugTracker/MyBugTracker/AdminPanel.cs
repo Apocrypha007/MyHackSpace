@@ -33,5 +33,30 @@ namespace MyBugTracker
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ManageUser mu = new ManageUser();
+            mu.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            BugReport bg = new BugReport();
+            bg.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AssignBugTo aab = new AssignBugTo();
+            aab.Show();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FixedBug fixbug = new FixedBug();
+            fixbug.Show();
+        }
     }
 }

@@ -83,6 +83,12 @@
     <Compile Include="AssignBugTo.Designer.cs">
       <DependentUpon>AssignBugTo.cs</DependentUpon>
     </Compile>
+    <Compile Include="AssignedBug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignedBug.Designer.cs">
+      <DependentUpon>AssignedBug.cs</DependentUpon>
+    </Compile>
     <Compile Include="BugReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,11 +101,23 @@
     <Compile Include="ChangePassword.Designer.cs">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="FixedBug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixedBug.Designer.cs">
+      <DependentUpon>FixedBug.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageUser.Designer.cs">
+      <DependentUpon>ManageUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProgrammerPanel.cs">
@@ -138,14 +156,23 @@
     <EmbeddedResource Include="AssignBugTo.resx">
       <DependentUpon>AssignBugTo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AssignedBug.resx">
+      <DependentUpon>AssignedBug.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BugReport.resx">
       <DependentUpon>BugReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FixedBug.resx">
+      <DependentUpon>FixedBug.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageUser.resx">
+      <DependentUpon>ManageUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProgrammerPanel.resx">
       <DependentUpon>ProgrammerPanel.cs</DependentUpon>

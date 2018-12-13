@@ -139,6 +139,7 @@
             this.btn_appoint.TabIndex = 40;
             this.btn_appoint.Text = "Assign";
             this.btn_appoint.UseVisualStyleBackColor = false;
+            this.btn_appoint.Click += new System.EventHandler(this.btn_appoint_Click);
             // 
             // button2
             // 
@@ -152,6 +153,7 @@
             this.button2.TabIndex = 41;
             this.button2.Text = "Close";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -160,6 +162,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(443, 223);
             this.dataGridView1.TabIndex = 42;
+            this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
             // AssignBugTo
             // 
@@ -178,6 +181,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "AssignBugTo";
             this.Text = "AssignBugTo";
+            this.Load += new System.EventHandler(this.AssignBugTo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

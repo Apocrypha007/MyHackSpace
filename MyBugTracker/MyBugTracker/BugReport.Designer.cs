@@ -54,7 +54,6 @@
             this.lbl_img_path = new System.Windows.Forms.Label();
             this.textBox_search = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_bugimg)).BeginInit();
             this.panel2.SuspendLayout();
@@ -330,21 +329,11 @@
             this.dataGridView.TabIndex = 31;
             this.dataGridView.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_RowHeaderMouseClick);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(134, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 13);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Automatically Added";
-            // 
             // BugReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 592);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.textBox_search);
             this.Controls.Add(this.lbl_img_path);
@@ -408,6 +397,5 @@
         private System.Windows.Forms.Label lbl_img_path;
         private System.Windows.Forms.TextBox textBox_search;
         private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.Label label1;
     }
 }
