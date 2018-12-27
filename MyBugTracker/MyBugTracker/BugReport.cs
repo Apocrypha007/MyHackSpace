@@ -56,7 +56,7 @@ namespace MyBugTracker
             MySqlDataAdapter sda = new MySqlDataAdapter("SELECT * FROM bugreport WHERE project LIKE '%" + keyword + "%'", conn);
             //Holding data from database
             DataTable dt = new DataTable();
-            sda.Fill(dt);//It means the fill in our database
+            sda.Fill(dt);//It means the fill in database
             return dt;
 
         }
@@ -105,8 +105,6 @@ namespace MyBugTracker
                 sda.Parameters.AddWithValue("@reportedby", reportedby);
                 conn.Open();
                 int rows = sda.ExecuteNonQuery();
-                //if Inserted rows is greater is greater than 0
-                //Else set isSuccess to false, Save Failed
 
                 if (rows > 0)
                 {
@@ -148,10 +146,8 @@ namespace MyBugTracker
             //get keyword from textbox 
             string keyword = textBox_search.Text;
             BugReport vb1 = new BugReport();
-            //check if keywords have value or not
             if (keyword != null)
             {
-                //show user based based on keywords
                 DataTable dt = vb1.Search_bug(keyword);
                 dataGridView.DataSource = dt;
 
@@ -260,7 +256,6 @@ namespace MyBugTracker
             string ReportDate = reportDate.Text.Trim();
             string ImagePath = lbl_img_path.Text.Trim();
             string status = combo_bugStatus.Text.ToString();
-            //getting loggedin user in added by field
             string loggedusertype = LoginForm.usertype;
 
             string reportedby = loggedusertype;
@@ -275,8 +270,6 @@ namespace MyBugTracker
                 conn.Open();
 
                 int rows = sda.ExecuteNonQuery();
-                //if Inserted rows is greater is greater than 0
-                //Else set isSuccess to false, Save Failed
 
                 if (rows > 0)
                 {
@@ -285,7 +278,7 @@ namespace MyBugTracker
                     BugReport vb = new BugReport();
                     DataTable dt = vb.Select_bug();
                     dataGridView.DataSource = dt;
-                    //Clear all the Input fields
+                    //Clearing the fields
                     textBox_bugid.Clear();
                     comboBox_project.Text = "";
                     textBox_bugtitle.Clear();
@@ -308,7 +301,7 @@ namespace MyBugTracker
             }
             finally
             {
-                //Step :CLose Connection
+                //Close Connection
                 conn.Close();
             }
 
@@ -316,7 +309,6 @@ namespace MyBugTracker
 
         private void dataGridView_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            //get index from particular row
             int rowIndex = e.RowIndex;
             textBox_bugid.Text = dataGridView.Rows[rowIndex].Cells[0].Value.ToString();
             comboBox_project.Text = dataGridView.Rows[rowIndex].Cells[1].Value.ToString();

@@ -59,8 +59,6 @@ namespace MyBugTracker
                 conn.Open();
                 int rows = sda.ExecuteNonQuery();
 
-                //if Inserted rows is greater is greater than 0
-                //Else set isSuccess to false, Save Failed
 
 
                 if (rows > 0)

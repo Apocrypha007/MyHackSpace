@@ -26,7 +26,7 @@ namespace MyBugTracker
             MySqlDataAdapter sda = new MySqlDataAdapter("Select * from bugreport where assignedto='" + LoginForm.uname + "'", conn);
             //Holding data from database
             DataTable dt = new DataTable();
-            sda.Fill(dt);//It means to fill in our database
+            sda.Fill(dt);//It means to fill in database
             return dt;
         }
 

@@ -31,7 +31,7 @@ namespace MyBugTracker
             MySqlDataAdapter sda = new MySqlDataAdapter("Select * from bugsolve ", conn);
             //Holding data from database
             DataTable dt = new DataTable();
-            sda.Fill(dt); //It means to fill in our database
+            sda.Fill(dt); //It means to fill in database
             return dt;
         }
 

@@ -31,7 +31,7 @@ namespace MyBugTracker
             MySqlDataAdapter sda = new MySqlDataAdapter("Select * from userdetails", conn);
             //Holding data from database
             DataTable dt = new DataTable();
-            sda.Fill(dt);//it means the fill in our database
+            sda.Fill(dt);//it means the fill in database
             return dt;
         }
 
@@ -50,7 +50,7 @@ namespace MyBugTracker
             MySqlDataAdapter sda = new MySqlDataAdapter("SELECT * FROM userdetails WHERE username LIKE '%" + keyword + "%'", conn);
             //Holding data from database
             DataTable dt = new DataTable();
-            sda.Fill(dt);//It means the fill in our database
+            sda.Fill(dt);//It means the fill in database
             return dt;
 
         }

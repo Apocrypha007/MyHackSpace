@@ -31,10 +31,10 @@ namespace MyBugTracker
                 MySqlDataAdapter sda = new MySqlDataAdapter("Select * from bugreport", conn);
 
                 //Create a Datatable to hold the records from database
-                //Step 5:Open Connection
+                //Open Connection
                 conn.Open();
 
-                //Step 6: Use Adapter to Fill dt
+                //Use Adapter to Fill dt
                 sda.Fill(dt);
             }
             catch (Exception ex)
@@ -44,7 +44,7 @@ namespace MyBugTracker
             }
             finally
             {
-                //Step 8: Close Connection
+                //Close Connection
                 conn.Close();
             }
             return dt;
@@ -63,10 +63,10 @@ namespace MyBugTracker
                 MySqlDataAdapter sda = new MySqlDataAdapter("Select username from userdetails where usertype='programmer'", conn);
 
                 //Create a Datatable to hold the records from database
-                //Step 5:Open Connection
+                //Open Connection
                 conn.Open();
 
-                //Step 6: Use Adapter to Fill dt
+                //Use Adapter to Fill dt
                 sda.Fill(dt);
             }
             catch (Exception ex)
@@ -76,7 +76,7 @@ namespace MyBugTracker
             }
             finally
             {
-                //Step 8: Close Connection
+                //Close Connection
                 conn.Close();
             }
             return dt;
@@ -102,15 +102,15 @@ namespace MyBugTracker
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
 
-            //Step 0: Find the index of the row clicked
+            //Find the index of the row clicked
             int index = e.RowIndex;
 
-            //Step 1: Get Values from Row Clicked
+            //Get Values from Row Clicked
             string BugID = dataGridView1.Rows[index].Cells[0].Value.ToString();
             string BugTitle = dataGridView1.Rows[index].Cells[2].Value.ToString();
             string ProjectTitle = dataGridView1.Rows[index].Cells[1].Value.ToString();
 
-            //Step2: Write Values to the textbox to assign user
+            //Write Values to the textbox to assign user
             textBox_bugID.Text = BugID;
             textBox_BugTitle.Text = BugTitle;
 
@@ -138,8 +138,6 @@ namespace MyBugTracker
                 //Open Connection
                 conn.Open();
                 int rows = sda.ExecuteNonQuery();
-                //if Inserted rows is greater is greater than 0
-                //Else set isSuccess to false, Save Failed
 
                 if (rows > 0)
                 {
